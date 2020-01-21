@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Amazon Checkout</title>
+ <meta name="viewport" content="width=device-width,initial-scale = 1.0, user-scalable = yes">
+ <link rel="stylesheet" type="text/css" href="styling.css">
+ </head>
+ <style>
+.bluebox, .redbox, .blackbox{
+	padding: 16px 32px;
+    font-size: 30px;
+    width: 100%;    
+} 	
+ </style>
+ <body>
+ <div style="background-color: yellow;" class="bluebox" id="facebook">Facebook is great</div>
+ <div style="    background-color: red;" class="redbox" id="Google">Google is great</div>
+ <div style="background-color: black; color: white;" class="blackbox" id="Amazon">Amazon is great</div>
+  <div style="background-color: blue; color: white;" class="bluebox" id="Apple">Apple is great</div>	
+<button id="first">Button 1</button>
+<button id="second">Button 2</button>
+<button id="three">Button 3</button>
+<button id="four">Button 4</button>
+<script>
+var color = 'rgb(10, 149, 68)';
+document.getElementById('first').onclick = function(){
+	document.getElementById('facebook').style.backgroundColor = color;
+}
+
+var x, y, z, Google;
+document.getElementById('second').onclick = function(){
+	x = Math.round(Math.random()*256);
+	y = Math.round(Math.random()*256);
+	z = Math.round(Math.random()*256);
+    Google =  'rgb(' + x + ', ' + y + ', ' + z +
+')';
+
+ 	document.getElementById('Google').style.backgroundColor = Google; 
+ 	document.getElementById('Google').innerHTML =  Google;   
+}
+
+
+
+
+
+
+
+
+</script>
+ </body>
+ </html> 	
